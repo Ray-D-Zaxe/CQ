@@ -1,0 +1,11 @@
+void numDigits(int n)
+{
+    int a = 0;
+    if(n > 0){
+    while(n > 0){
+        n /= 10;
+        a++;
+    }}
+    else a = 1;
+    printf("%d", a);
+}

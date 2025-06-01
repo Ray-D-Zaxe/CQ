@@ -1,0 +1,8 @@
+void printOdds(int a, int b)
+{
+    while(a <= b){
+        if(a % 2 !=0)
+            printf("%d ", a);
+        a++;
+    }
+}

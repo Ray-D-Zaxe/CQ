@@ -1,0 +1,16 @@
+void printPrimes(int a, int b)
+{
+    int i, j, k, c = 0;
+    for(i = a; i <=b; i++){
+        k = 0;
+        for(j = 2; j * j <= i; j++){
+            if(i % j == 0)
+                k += 1;
+        }
+        if(k == 0)
+            printf("%d ", i, c++);
+    }
+    if(c == 0){
+        printf("-1");
+    }
+}

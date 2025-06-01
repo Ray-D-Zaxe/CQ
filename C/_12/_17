@@ -1,0 +1,10 @@
+/*
+ * Complete the function 'add()'
+ * @params
+ *  a,b -> integers to be added
+ * @return
+ *  an integer , sum of the numbers passed
+ */
+int add (int a , int b){
+    return a + b;
+}

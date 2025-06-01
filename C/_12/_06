@@ -1,0 +1,9 @@
+float getDiameter(float n)
+{
+    return 2 * n;
+}
+float getArea(float n)
+{
+    float a = 355.0 / 113.0;
+    return (a * (n * n));
+}

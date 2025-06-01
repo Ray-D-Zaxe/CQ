@@ -1,0 +1,7 @@
+void factorial(int n)
+{
+    int a = 1;
+    while(n > 1)
+        a *= n--;
+    printf("%d", a);
+}

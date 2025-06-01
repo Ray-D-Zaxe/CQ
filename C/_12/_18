@@ -1,0 +1,17 @@
+/*
+ * Complete the function 'prime()'
+ * @params
+ *  n -> integer to be checked for primality
+ * @return
+ *  an integer , 1 if the number passed is prime else 0
+ */
+int prime(int n){
+    if(n == 2) return 1; // My fault, didn't account for 2 being the input and didn't see number of test cases (t) as one of the inputs
+    else if(n < 1 || n == 1 || n % 2 == 0) return 0;
+    else{
+        for(int i = 3; i < n; i += 2){
+            if(n % i == 0) return 0;
+        }
+        return 1;
+    }
+}

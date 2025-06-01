@@ -1,0 +1,9 @@
+int gcd(int i, int j)
+{
+    int a = 1;
+    for(int k = 2; k <= i || k <= j; k++){
+        if(i % k == 0 && j % k == 0)
+            a = k;
+    }
+    return a;
+}
