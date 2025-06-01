@@ -1,0 +1,10 @@
+int insert(int arr[], int size, int n, int pos)
+{
+    int i = size;
+    while(i > pos){
+        arr[i] = arr[i - 1];
+        i--;
+    }
+    arr[pos] = n;
+    return arr;
+}

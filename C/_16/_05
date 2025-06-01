@@ -1,0 +1,16 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+    // Can we do this without using arrays, lets find out shall we
+    // int ar[10];
+    int a, b = 0, i;
+    for(i = 0; i < 10; i++){
+        //scanf("%d\n", &ar[i]);
+        scanf("%d\n", &a);
+        // b += ar[i]
+        b += a;
+    }
+    printf("%d", b);
+    return 0;
+}

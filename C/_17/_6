@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    int a, b, i, j;
+    scanf("%d %d\n", &a, &b);
+    int ar1[a][b], ar2[a][b];
+    for(i = 0; i < a; i++){
+        for(j = 0; j < b; j++)
+            scanf("%d ", &ar1[i][j]);
+        printf("\n");
+    }
+    for(i = 0; i < a; i++){
+        for(j = 0; j < b; j++)
+            scanf("%d ", &ar2[i][j]);
+        printf("\n");
+    }
+    for(i = 0; i < a; i++){
+        for(j = 0; j < b; j++)
+            ar1[i][j] += ar2[i][j];
+        printf("\n");
+    }
+    for(i = 0; i < a; i++){
+        for(j = 0; j < b; j++)
+            printf("%d ", ar1[i][j]);
+        printf("\n");
+    }
+    return 0;
+}

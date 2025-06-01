@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int a = 0, b, c, i, j;
+    scanf("%d %d\n", &b, &c);
+    int d[b][c];
+    for(i = 0; i < b; i++){
+        for(j = 0; j < c; j++){
+            scanf("%d ", &d[i][j]);
+            if(a < d[i][j]) a = d[i][j];
+        }
+        printf("\n");
+    }
+    printf("%d", a);
+    return 0;
+}

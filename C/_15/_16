@@ -1,0 +1,8 @@
+void swap(int *n1, int *n2)
+{
+    // Gotta do it for real this time aye
+    // We could also use (+) insted of (^) [bitwise xor]
+    *n1 ^= *n2;
+    *n2 ^= *n1;
+    *n1 ^= *n2;
+}

@@ -1,0 +1,10 @@
+int count(int arr[], int T)
+{
+    int a = 0, i = 0;
+    while(i < T){
+        if(arr[i] < 0)
+            a++;
+        i++;
+    }
+    return a;
+}

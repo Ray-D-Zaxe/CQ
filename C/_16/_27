@@ -1,0 +1,8 @@
+void reverseArray(int *a, int size)
+{
+    for(int i = size - 1; i >= size/2; i--){
+        int b = *(a + i);
+        *(a + i) = *(a + (size - 1) - i);
+        *(a + (size - 1) - i) = b;
+    }
+}

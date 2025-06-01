@@ -1,0 +1,10 @@
+void count(int a[], int T)
+{
+    int i = 0, c = 0, b = 0;
+    while(i < T){
+        if(a[i] % 2 == 0) c++;
+        else b++;
+        i++;
+    }
+    printf("%d %d", c, b);
+}

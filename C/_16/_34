@@ -1,0 +1,15 @@
+/*
+ * Complete the function smallestInArray
+ * @params
+ *   a -> array of integers
+ *   n -> size of array
+ * @returns
+ *   minimum element of array
+ */
+int smallestInArray (int a[], int n){
+    int b = a[0], i = 1;
+    for( ;i < n; i++){
+        if(b > a[i]) b = a[i];
+    }
+    return b;
+}

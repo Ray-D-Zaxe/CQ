@@ -1,0 +1,16 @@
+#include <stdio.h>
+int pf(int n, int a){
+    if(n == 1) return;
+    if(n % a == 0){
+        printf("%d\n", a);
+        return pf(n / a, a);
+    }
+    else return pf(n, a + 1);
+}
+int main()
+{
+   int no;
+   scanf("%d",&no);
+    pf(no, 2);
+   return 0;
+}

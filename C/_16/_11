@@ -1,0 +1,13 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+    int i, arr[10], rra[10];
+    for(i = 0; i < 10; i++)
+        scanf("%d\n", &arr[i]);
+    for(i = 9; i >= 0; i--)
+        rra[9 - i] = arr[i];
+    for(i = 0; i < 10; i++)
+        printf("%d\n", rra[i]);
+    return 0;
+}
