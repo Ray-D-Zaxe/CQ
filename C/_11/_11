@@ -1,0 +1,15 @@
+/*
+ * Complete the function 'primeFactors'
+ * Print all the prime factors of the number
+ * @params
+ *   n -> numbers whose prime factors are to be found
+ */
+void primeFactors(int n){
+    int a = 2;
+    while(n != 1){
+        if(n % a == 0)
+            printf("%d\n", a, n /= a);
+        else
+            a++;
+    }
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+    int a, b;
+    scanf("%d %d\n", &a, &b);
+    for(int i = a; i <= b; i++){
+        if(i % 3 == 0 && i % 5 == 0)
+            printf("CodeQuotient\n");
+        else if(i % 3 == 0)
+            printf("Code\n");
+        else if(i % 5 == 0)
+            printf("Quotient\n");
+        else
+            printf("%d\n", i);
+    }
+    return 0;
+}

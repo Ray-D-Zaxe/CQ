@@ -1,0 +1,19 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+    int a, b, c, d, e = 0, i;
+    scanf("%d %d", &a, &b);
+    for(i = a; i <= b; i++){
+        c = i; d = 0;
+        while(c > 0){
+            d *= 10;
+            d += c % 10;
+            c /= 10;
+        }
+        if(i == d)
+            e++;
+    }
+    printf("%d", e);
+    return 0;
+}
